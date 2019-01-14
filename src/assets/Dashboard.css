@@ -1,0 +1,72 @@
+.fixed-header-content {
+  
+    width: 100%;
+    z-index: 10129102910;
+    background:#222426; 
+   
+}
+.primary-tab .ant-tabs-content {
+    box-sizing: border-box;
+
+}
+.ant-tabs-nav {
+    color:#e67919;
+    float: right;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.fixed-footer-content {
+    top:91%;
+    position: fixed;
+    width: 100%;
+    z-index: 10129102910;
+    background:#222426; 
+    
+}
+.contact-form{
+    margin-top:100px;
+}
+.contact{
+    margin-top:15px;
+}
+.login-form{
+   
+    padding:30px;
+}
+.log{
+    background-color: #e67919;
+    color:white;
+    text-align: center;
+    padding:10px;
+    border-radius: 10px 10px 0px 0px;
+}
+.login-block{
+    position: relative;
+    margin-top: 250px;
+    left:25%;
+    height:235px;
+    width:400px;
+    border:2px solid grey;
+    border-radius: 10px;
+}
+.landing{
+    background-image: linear-gradient(to bottom right, #020f4e, #0e3101);
+    height: auto;
+    background-repeat: no-repeat;
+   
+}
+.info{
+    width:800px;
+    height:auto;
+    background-color: aliceblue;
+}
+.roomCount{
+    background-color: "light grey";
+    padding:10px;
+    display:block;
+    
+}
+.room:hover + .roomCount{
+    display: block;
+}
