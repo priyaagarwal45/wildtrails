@@ -143,7 +143,6 @@ class LandingPage extends Component {
             visitors += roomCombo[j].adults + roomCombo[j].kids + roomCombo[j].infants;
         }
         for (var i = 0; i < safarilist.length; i++) {
-            console.log(safarilist[i].type);
             if (safarilist[i].type == 'Exclusive Gypsy' || safarilist[i].type == 'Standard Gypsy') {
                 gypsy = Math.ceil(visitors / 6);
                 price += gypsy * 10000;
@@ -217,7 +216,6 @@ class LandingPage extends Component {
     onStartChange = (date, dateString) => {
         this.onChange('startValue', date, dateString);
         this.checkin = dateString
-        console.log(dateString);
     }
 
 
@@ -225,7 +223,6 @@ class LandingPage extends Component {
     onEndChange = (date, dateString) => {
         this.onChange('startValue', date, dateString);
         this.checkout = dateString
-        console.log(dateString);
     }
 
     // Opens the Modal to enter details
@@ -252,13 +249,11 @@ class LandingPage extends Component {
     //Function to get the value of Park Selected
     parkid = e => {
         this.park = e;
-        console.log(this.park);
     }
 
     //Function to get the value of Resort Type Selected
     resortid = e => {
         this.resort = e;
-        console.log(this.resort);
     }
 
 
@@ -270,7 +265,6 @@ class LandingPage extends Component {
         var checkin = "";
         var checkout = "";
         return [
-            console.log(this.roomCombo),
             <div className="landing">
                 <h1 style={{ color: "#a25605", textAlign: "center", fontSize: 55 + 'px', fontFamily: "serif" }}><b>Welcome to Wild Trails!</b></h1>
                 <Link to='/dashboard'>
